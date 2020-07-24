@@ -1,10 +1,11 @@
 const http = require("http");
 
 const server = http.createServer((req, res) => {
-	res.write("Hello World, welcome to WeJapa internships");
+	res.write("Hello World, welcome to WeJapa Internships");
 	res.end();
 });
 
-server.listen(3000, () => {
-	console.log("server listenening on port 3000");
+const port = 3000;
+server.listen(port, () => {
+	console.log(`Server is listening on port ${port}`);
 });
